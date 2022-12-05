@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome to my GYM</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<style>
+body{
+margin: 0px;
+padding: 0px;
+}
+nav{
+display: flex;
+}
+nav .logo img{
+height: 50px;
+width: 50px;
+margin: 2px 3px;
+}
+nav #nav{
+display: flex;
+margin: 12px 3px;
+}
+#nav li{
+list-style: none;
+}
+#nav li a{
+text-decoration: none;
+margin: 2px 9px;
+padding: 2px 3px;
+font-size: 20px;
+font-weight: bold;
+color: white;
+}
+#nav li a:HOVER{
+color: lime;
+text-decoration: underline;
+}
+#home{
+display: flex;
+height:450px;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+#home:BEFORE {
+	content:"";
+	position: absolute;
+	background: url("img/imgg.jpg")no-repeat center center/cover;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	
+}
+#home .center{
+color: white;
+font-weight:bold;
+text-align: center;
+
+}
+#home .str{
+color: white;
+text-align: center;
+color: #ff4c00e8;
+font-size: 50px;
+font-weight: bolder;
+}
+#home .body{
+color: white;
+text-align: center;
+font-weight: bold;
+}
+
+.btn{
+background-color: red;
+font-weight: bold;
+margin: 2px 3px;
+padding: 2px 13px;
+border-radius:8px;
+font-size: 18px;
+}
+.btn:HOVER {
+	background-color: orange;
+	text-decoration: underline;
+}
+.mem a{
+color:black;
+float: right;
+background-color: #ff5a00;
+border: 2px solid black;
+border-radius:8px;
+margin: 2px 13px;
+padding: 5px 3px;
+text-decoration: none;
+font-weight: bold;
+}
+.mem a:HOVER {
+	background-color: #e86f22;
+	text-decoration: underline;
+}
+</style>
+<body>
+<div class="mem">
+<a href="members.jsp" >Our Members</a>
+</div>
+<nav>
+
+<div class="logo">
+<img alt="" src="img/logo.png">
+</div>
+<ul id="nav">
+<li><a href="#">Home</a></li>
+<li><a href="about.html" target="__blank">About</a></li>
+<li><a href="servises.html" target="__blank">Servises</a></li>
+<li><a href="#">Contact Us</a></li>
+
+</ul>
+</nav>
+<section id="home">
+<h3 class="center">BUILD UP YOUR </h3>
+<h1 class="str">STRENGTH</h1>
+<h5 class="body">BUILD PERFECT BODY SHAPE FOR GOOD AND HEALTHY LIFE</h5>
+<a href="join.jsp" target="__blank" class="btn">Join Now</a>
+</section>
+</body>
+</html>
